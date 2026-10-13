@@ -88,3 +88,5 @@ README screenshot previews use existing production-browser fixture captures, inc
 ## Public repository authorization
 
 The user explicitly authorized a public `openpatro` repository after readiness checks. The implementation receives an MIT license; attribution and unresolved upstream content terms remain separate. Public GitHub source publication does not authorize or constitute deployment of the running app.
+
+Public source publication is complete at https://github.com/uzuw/openpatro (PUBLIC, default branch main). The app remains locally hosted; upstream reuse terms, persistent storage for ephemeral hosting, and real external OAuth verification remain separate unresolved limitations.

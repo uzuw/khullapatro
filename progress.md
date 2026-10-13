@@ -75,3 +75,9 @@ The user explicitly requested implementation with the modern Next.js stack and d
 - Rechecking compilation, unit/browser verification, formatting, and publishable files before the initial commit. Secrets, runtime snapshots, raw source downloads, and REA export remain excluded.
 
 - Readiness checks complete: production build, TypeScript, ESLint, Prettier, 22 unit tests, and 11 production Chromium tests pass; production dependency audit is clean. Staged-file secret/exclusion and README-link checks pass.
+
+## Public GitHub publication complete
+
+- Created https://github.com/uzuw/openpatro as a public repository and pushed the initial implementation to main. GitHub reports PUBLIC visibility and main as the default branch.
+- README includes clone/install instructions, motivation, investigation method, and four screenshot previews. MIT license and third-party notices are included.
+- Raw third-party downloads, REA export, runtime caches, local secrets, dependencies, build output, and browser reports are excluded. No live app deployment was performed.

@@ -4,7 +4,7 @@
 
 Implement the user's simple OpenPatro with Nepali calendar events, daily rashifal, and independent Nepal gold/silver history. The subsequent 2026-10-13 implementation request supersedes the earlier planning-only instruction and specifies Next.js, NextAuth, Tailwind, Framer Motion, next/font, Zod, security headers, next/image, Playwright, ESLint, Prettier, actual Obsidian UI components and beautiful dithered art.
 
-Current phase: local MVP implemented and verified. Evidence is recorded in docs/verification.md. Public deployment is outside scope.
+Current phase: local MVP implemented and verified; source published at https://github.com/uzuw/openpatro on the public main branch. Evidence is recorded in docs/verification.md. Public application deployment is outside scope.
 
 ## Completed planning stages
 
@@ -41,4 +41,4 @@ The user has authorized creation and publication of the public `uzuw/openpatro` 
 
 ## Next action
 
-Publish the reviewed README, screenshot previews, and implementation as `uzuw/openpatro` after release checks. The user explicitly authorized the public push. Local MVP remains ready at http://localhost:3001; optional external OAuth needs provider credentials.
+The reviewed README, screenshots, MIT-licensed implementation, tests, and documentation are published as `uzuw/openpatro`. Public repository publication is complete. Local MVP remains ready at http://localhost:3001; optional external OAuth needs provider credentials.
