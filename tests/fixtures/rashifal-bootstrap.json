@@ -1,0 +1,116 @@
+{
+  "renderedAt": 1791873038020,
+  "today": {
+    "adKey": "2026-10-13",
+    "year_ad": 2026,
+    "month_ad": 10,
+    "date_ad": 13,
+    "year_bs": 2083,
+    "month_bs": 6,
+    "date_bs": 27
+  },
+  "data": {
+    "period": "daily",
+    "rashifal": {
+      "date": "२७ आश्विन  २०८३ मंगलवार",
+      "signs": [
+        {
+          "slug": "mesh",
+          "np": "मेष",
+          "en": "Aries",
+          "emoji": "♈",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "brish",
+          "np": "वृष",
+          "en": "Taurus",
+          "emoji": "♉",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "mithun",
+          "np": "मिथुन",
+          "en": "Gemini",
+          "emoji": "♊",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "karkat",
+          "np": "कर्कट",
+          "en": "Cancer",
+          "emoji": "♋",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "singha",
+          "np": "सिंह",
+          "en": "Leo",
+          "emoji": "♌",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "kanya",
+          "np": "कन्या",
+          "en": "Virgo",
+          "emoji": "♍",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "tula",
+          "np": "तुला",
+          "en": "Libra",
+          "emoji": "♎",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "brischik",
+          "np": "वृश्चिक",
+          "en": "Scorpio",
+          "emoji": "♏",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "dhanu",
+          "np": "धनु",
+          "en": "Sagittarius",
+          "emoji": "♐",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "makar",
+          "np": "मकर",
+          "en": "Capricorn",
+          "emoji": "♑",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "kumbha",
+          "np": "कुम्भ",
+          "en": "Aquarius",
+          "emoji": "♒",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        },
+        {
+          "slug": "meen",
+          "np": "मीन",
+          "en": "Pisces",
+          "emoji": "♓",
+          "descEn": "",
+          "descNp": "परीक्षणको लागि मात्र।"
+        }
+      ]
+    }
+  }
+}

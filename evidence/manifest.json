@@ -1,0 +1,32 @@
+{
+  "inventoriedAt": "2026-10-13T06:23:08.417473+00:00",
+  "kind": "research-only",
+  "note": "Inventory timestamp is not the individual source retrieval time. Raw artifacts are local evidence excluded from publication.",
+  "artifacts": [
+    {
+      "path": "evidence/hamropatro/home.html",
+      "bytes": 1729009,
+      "sha256": "df7e32461d9463a32c6259fd1b3f0a54fe182296c933bd32fa3ca460ffdcb155"
+    },
+    {
+      "path": "evidence/hamropatro/site.js",
+      "bytes": 2412648,
+      "sha256": "d2082c5e4c30d5568d2d54a8b9b3fae841c18b3688715c8d7448d0be2c821498"
+    },
+    {
+      "path": "evidence/rea-bundle.json",
+      "bytes": 487232,
+      "sha256": "858c75a54c8d607877027155f6b0d9cd66b6bb966595b6c53a213ca40e1f148d"
+    },
+    {
+      "path": "evidence/snapshots/metals-history.json",
+      "bytes": 32503,
+      "sha256": "2f8000c6dad7e18180e6b3ddbad1713e6ad1b16a56ba123f9ab41e68ed942fbe"
+    },
+    {
+      "path": "evidence/snapshots/patro-snapshot.json",
+      "bytes": 254557,
+      "sha256": "494ee36e7c75964f2dcf02694866b7028203dfb844fa402191c8f34bb7de2414"
+    }
+  ]
+}

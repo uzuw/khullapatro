@@ -1,0 +1,126 @@
+{
+  "goldData": [
+    {
+      "date": "20",
+      "year": "2026",
+      "month": "Jan",
+      "tola": 284700.0
+    },
+    {
+      "date": "20",
+      "year": "2026",
+      "month": "Jun",
+      "tola": 286700.0
+    },
+    {
+      "date": "20",
+      "year": "2026",
+      "month": "Aug",
+      "tola": 313400.0
+    },
+    {
+      "date": "20",
+      "year": "2026",
+      "month": "Sep",
+      "tola": 305200.0
+    },
+    {
+      "date": "1",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 293300.0
+    },
+    {
+      "date": "5",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 291500.0
+    },
+    {
+      "date": "8",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 292800.0
+    },
+    {
+      "date": "11",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 296500.0
+    },
+    {
+      "date": "12",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 294400.0
+    },
+    {
+      "date": "13",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 292200.0
+    }
+  ],
+  "silverData": [
+    {
+      "date": "20",
+      "year": "2026",
+      "month": "Jan",
+      "tola": 5880.0
+    },
+    {
+      "date": "20",
+      "year": "2026",
+      "month": "Jun",
+      "tola": 4640.0
+    },
+    {
+      "date": "20",
+      "year": "2026",
+      "month": "Aug",
+      "tola": 4855.0
+    },
+    {
+      "date": "20",
+      "year": "2026",
+      "month": "Sep",
+      "tola": 4795.0
+    },
+    {
+      "date": "1",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 4425.0
+    },
+    {
+      "date": "5",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 4430.0
+    },
+    {
+      "date": "8",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 4390.0
+    },
+    {
+      "date": "11",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 4440.0
+    },
+    {
+      "date": "12",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 4415.0
+    },
+    {
+      "date": "13",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 4355.0
+    }
+  ]
+}

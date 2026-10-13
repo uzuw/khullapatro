@@ -1,0 +1,1009 @@
+{
+  "renderedAt": 1791873006806,
+  "today": {
+    "adKey": "2026-10-13",
+    "year_ad": 2026,
+    "month_ad": 10,
+    "date_ad": 13,
+    "year_bs": 2083,
+    "month_bs": 6,
+    "date_bs": 27
+  },
+  "data": {
+    "calendar": {
+      "initialMonths": [
+        {
+          "yearBs": 2083,
+          "monthBs": 6,
+          "monthNameNp": "असोज",
+          "monthNameEn": "Ashwin",
+          "daysInMonth": 31,
+          "days": [
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 13,
+              "year_bs": 2083,
+              "month_bs": 5,
+              "day_bs": 28,
+              "dayOfWeek": 0,
+              "inMonth": false,
+              "tithiShort": "द्वितीया",
+              "tithiShifted": false,
+              "isWeekendHoliday": true,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "दर खाने दिन",
+                    "titleEn": "Dar Khane Din",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 14,
+              "year_bs": 2083,
+              "month_bs": 5,
+              "day_bs": 29,
+              "dayOfWeek": 1,
+              "inMonth": false,
+              "tithiShort": "तृतिया",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "हरितालिका तीज (महिला कर्मचारीहरूलाई मात्र)",
+                    "titleEn": "Haritalika Teej",
+                    "isHoliday": true
+                  },
+                  {
+                    "titleNp": "गणेश चतुर्थी व्रत",
+                    "titleEn": "Ganesh Chaturthi Varta",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "राष्ट्रिय धर्मसभा दिवस",
+                    "titleEn": "Rashtriya Dharmasabha Diwas",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "राष्ट्रिय बाल दिवस",
+                    "titleEn": "Rashtriya Bal Diwas",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 15,
+              "year_bs": 2083,
+              "month_bs": 5,
+              "day_bs": 30,
+              "dayOfWeek": 2,
+              "inMonth": false,
+              "tithiShort": "चतुर्थी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "ऋषिपञ्चमी व्रत",
+                    "titleEn": "Rishi Panchami Vrata",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 16,
+              "year_bs": 2083,
+              "month_bs": 5,
+              "day_bs": 31,
+              "dayOfWeek": 3,
+              "inMonth": false,
+              "tithiShort": "पञ्चमी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "विश्व ओजोन तह बचाउ दिवस",
+                    "titleEn": "International Day For The Preservation Of The Ozone Layer",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 17,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 1,
+              "dayOfWeek": 4,
+              "inMonth": true,
+              "tithiShort": "षष्ठी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "विश्वकर्मा पूजा",
+                    "titleEn": "Bishwakarma Pooja",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "कन्या संक्रान्ति",
+                    "titleEn": "Kanya Sankranti",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "वास्तु दिवस",
+                    "titleEn": "Wastu Diwas",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "सूर्य षष्ठी",
+                    "titleEn": "Surya Sasti",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "राष्ट्रिय विज्ञान दिवस",
+                    "titleEn": "National Science Day",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व बिरामी सुरक्षा दिवस",
+                    "titleEn": "World Patient Safety Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 18,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 2,
+              "dayOfWeek": 5,
+              "inMonth": true,
+              "tithiShort": "सप्तमी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "महालक्ष्मी व्रतआरम्भ",
+                    "titleEn": "Mahalakshmi Vrata Aarambha",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 19,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 3,
+              "dayOfWeek": 6,
+              "inMonth": true,
+              "tithiShort": "अष्टमी",
+              "tithiShifted": false,
+              "isWeekendHoliday": true,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "संविधान दिवस",
+                    "titleEn": "Sambidhan Diwas",
+                    "isHoliday": true
+                  },
+                  {
+                    "titleNp": "राधा जन्मोत्सव",
+                    "titleEn": "Radha Janmotsav",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "गोरखकाली पूजा",
+                    "titleEn": "Gorakhkali Puja",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 20,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 4,
+              "dayOfWeek": 0,
+              "inMonth": true,
+              "tithiShort": "नवमी",
+              "tithiShifted": false,
+              "isWeekendHoliday": true,
+              "isHoliday": true,
+              "patroEvent": null
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 21,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 5,
+              "dayOfWeek": 1,
+              "inMonth": true,
+              "tithiShort": "दशमी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "विश्व शान्ति दिवस",
+                    "titleEn": "World Peace Day",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व अल्जाइमर्स दिवस",
+                    "titleEn": "World Alzheimer's Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 22,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 6,
+              "dayOfWeek": 2,
+              "inMonth": true,
+              "tithiShort": "एकादशी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "हरिपरिवर्तिनी एकादशी व्रत",
+                    "titleEn": "Haripariwartani Ekadashi Vrata",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 23,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 7,
+              "dayOfWeek": 3,
+              "inMonth": true,
+              "tithiShort": "द्वादशी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "वामन द्वादशी",
+                    "titleEn": "Vaman Dwadashi",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "अन्तर्राष्ट्रिय सांकेतिक भाषा दिवस",
+                    "titleEn": "International Day of Sign Languages",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 24,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 8,
+              "dayOfWeek": 4,
+              "inMonth": true,
+              "tithiShort": "त्रयोदशी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "प्रदोष व्रत",
+                    "titleEn": "Pradosh Vrata",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 25,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 9,
+              "dayOfWeek": 5,
+              "inMonth": true,
+              "tithiShort": "चतुर्दशी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "इन्द्रजात्रा (काठमाडौं उपत्यका बिदा)",
+                    "titleEn": "Indra Jaatra",
+                    "isHoliday": true
+                  },
+                  {
+                    "titleNp": "अनन्त चतुर्दशी व्रत",
+                    "titleEn": "Ananta Chaturdashi Vrata",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व फार्मासिस्ट दिवस",
+                    "titleEn": "World Pharmacists Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 26,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 10,
+              "dayOfWeek": 6,
+              "inMonth": true,
+              "tithiShort": "पूर्णिमा",
+              "tithiShifted": false,
+              "isWeekendHoliday": true,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "चेपाङ चोनाम पर्व",
+                    "titleEn": "Chepang Chonam Parva",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "अन्तर्राष्ट्रिय परमाणु हतियार निर्मुल दिवस",
+                    "titleEn": "International Day For The Elimination Of Neuclear Weapons",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 27,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 11,
+              "dayOfWeek": 0,
+              "inMonth": true,
+              "tithiShort": "प्रतिपदा",
+              "tithiShifted": false,
+              "isWeekendHoliday": true,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "सोह्रश्राद्ध प्रारम्भ (प्रतिपदा श्राद्ध)",
+                    "titleEn": "Sohra Sraddha Praarambha (Pratipada Shraddha)",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व पर्यटन दिवस",
+                    "titleEn": "World Tourism Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 28,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 12,
+              "dayOfWeek": 1,
+              "inMonth": true,
+              "tithiShort": "द्वितीया",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "द्वितीया श्राद्ध",
+                    "titleEn": "Dwitiya Shradhha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व रेबिज दिवस",
+                    "titleEn": "World Rabies Day",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "अन्तर्राष्ट्रिय सूचनामा विश्वव्यापी पहुँचको दिवस",
+                    "titleEn": "International Day for Universal Access to Information",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 29,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 13,
+              "dayOfWeek": 2,
+              "inMonth": true,
+              "tithiShort": "तृतिया",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "तृतीया श्राद्ध",
+                    "titleEn": "Tritiya Shradhha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व मुटु दिवस",
+                    "titleEn": "World Heart Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 9,
+              "day_ad": 30,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 14,
+              "dayOfWeek": 3,
+              "inMonth": true,
+              "tithiShort": "चतुर्थी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "चतुर्थी श्राद्ध",
+                    "titleEn": "Chaturthi Shraddha",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 1,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 15,
+              "dayOfWeek": 4,
+              "inMonth": true,
+              "tithiShort": "पञ्चमी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "पञ्चमी श्राद्ध",
+                    "titleEn": "Panchami Shradhha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "षष्ठी श्राद्ध",
+                    "titleEn": "Khasti Shraddha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "राष्ट्रिय चलचित्र दिवस",
+                    "titleEn": "National Film Day",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "अन्तर्राष्ट्रिय  ज्येष्ठ नागरिक दिवस",
+                    "titleEn": "International Day of Older Persons",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 2,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 16,
+              "dayOfWeek": 5,
+              "inMonth": true,
+              "tithiShort": "षष्ठी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "सप्तमी श्राद्ध",
+                    "titleEn": "Saptami Shraddha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व अहिंसा दिवस",
+                    "titleEn": "World Non Violence Day",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व मुस्कान दिवस",
+                    "titleEn": "World Smile Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 3,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 17,
+              "dayOfWeek": 6,
+              "inMonth": true,
+              "tithiShort": "सप्तमी",
+              "tithiShifted": false,
+              "isWeekendHoliday": true,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "अष्टमी श्राद्ध",
+                    "titleEn": "Ashtami Shraddha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "गोरखकाली पूजा",
+                    "titleEn": "Gorakhkali Puja",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "महालक्ष्मी व्रत समाप्त",
+                    "titleEn": "Maha Laxmi Vrata Ends",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 4,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 18,
+              "dayOfWeek": 0,
+              "inMonth": true,
+              "tithiShort": "अष्टमी",
+              "tithiShifted": false,
+              "isWeekendHoliday": true,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "जितियापर्व (महिला कर्मचारीहरूलाई मात्र)",
+                    "titleEn": "Jitiya Parva",
+                    "isHoliday": true
+                  },
+                  {
+                    "titleNp": "नवमी श्राद्ध",
+                    "titleEn": "Nawami Shraddha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व पशु दिवस",
+                    "titleEn": "World Animal Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 5,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 19,
+              "dayOfWeek": 1,
+              "inMonth": true,
+              "tithiShort": "दशमी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "दशमी श्राद्ध",
+                    "titleEn": "Dashami Shraddha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व शिक्षक दिवस",
+                    "titleEn": "World Teachers Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 6,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 20,
+              "dayOfWeek": 2,
+              "inMonth": true,
+              "tithiShort": "एकादशी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "इन्दिरा एकादशी व्रत",
+                    "titleEn": "Indira Ekadashi Vrata",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "एकादशी श्राद्ध",
+                    "titleEn": "Ekadashi Shraddha",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 7,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 21,
+              "dayOfWeek": 3,
+              "inMonth": true,
+              "tithiShort": "द्वादशी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "द्वादशी श्राद्ध",
+                    "titleEn": "Dwadashi Shraddha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "मघा श्राद्ध",
+                    "titleEn": "Magha Shraddha",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 8,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 22,
+              "dayOfWeek": 4,
+              "inMonth": true,
+              "tithiShort": "त्रयोदशी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "प्रदोष व्रत",
+                    "titleEn": "Pradosh Vrata",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "त्रयोदशी श्राद्ध",
+                    "titleEn": "Trayodashi Shraddha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व दृष्टि दिवस",
+                    "titleEn": "World Sight Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 9,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 23,
+              "dayOfWeek": 5,
+              "inMonth": true,
+              "tithiShort": "चतुर्दशी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "चतुर्दशी श्राद्ध",
+                    "titleEn": "Chaturdashi Shraddha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व हुलाक दिवस",
+                    "titleEn": "World Post Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 10,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 24,
+              "dayOfWeek": 6,
+              "inMonth": true,
+              "tithiShort": "औंसी",
+              "tithiShifted": false,
+              "isWeekendHoliday": true,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "पितृ विसर्जन",
+                    "titleEn": "Pitri Bisarjan",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "औंसी श्राद्ध",
+                    "titleEn": "Aunshi Shraddha",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "विश्व मानसिक स्वास्थ्य दिवस",
+                    "titleEn": "World Mental Health Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 11,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 25,
+              "dayOfWeek": 0,
+              "inMonth": true,
+              "tithiShort": "प्रतिपदा",
+              "tithiShifted": false,
+              "isWeekendHoliday": true,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "घटस्थापना व्रत",
+                    "titleEn": "Ghatasthaapana Vrata",
+                    "isHoliday": true
+                  },
+                  {
+                    "titleNp": "नवरात्र आरम्भ",
+                    "titleEn": "Navaraatra Arambha",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 12,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 26,
+              "dayOfWeek": 1,
+              "inMonth": true,
+              "tithiShort": "द्वितीया",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": null
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 13,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 27,
+              "dayOfWeek": 2,
+              "inMonth": true,
+              "tithiShort": "तृतिया",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "अन्तर्राष्ट्रिय प्रकोप जोखिम न्यूनीकरण दिवस",
+                    "titleEn": "International Day for Disaster Risk Reduction",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 14,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 28,
+              "dayOfWeek": 3,
+              "inMonth": true,
+              "tithiShort": "चतुर्थी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": null
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 15,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 29,
+              "dayOfWeek": 4,
+              "inMonth": true,
+              "tithiShort": "पञ्चमी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "विश्व हातधुने दिवस",
+                    "titleEn": "Global Handwashing Day",
+                    "isHoliday": false
+                  },
+                  {
+                    "titleNp": "अन्तर्राष्ट्रिय ग्रामीण महिला दिवस",
+                    "titleEn": "International Day of Rural Women",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 16,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 30,
+              "dayOfWeek": 5,
+              "inMonth": true,
+              "tithiShort": "षष्ठी",
+              "tithiShifted": false,
+              "isWeekendHoliday": false,
+              "isHoliday": false,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "विश्व खाद्य दिवस",
+                    "titleEn": "World Food Day",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            },
+            {
+              "year_ad": 2026,
+              "month_ad": 10,
+              "day_ad": 17,
+              "year_bs": 2083,
+              "month_bs": 6,
+              "day_bs": 31,
+              "dayOfWeek": 6,
+              "inMonth": true,
+              "tithiShort": "सप्तमी",
+              "tithiShifted": true,
+              "isWeekendHoliday": true,
+              "isHoliday": true,
+              "patroEvent": {
+                "items": [
+                  {
+                    "titleNp": "फूलपाती",
+                    "titleEn": "Fulpati",
+                    "isHoliday": true
+                  },
+                  {
+                    "titleNp": "दशैं बिदा",
+                    "titleEn": "Dashain Holiday",
+                    "isHoliday": true
+                  },
+                  {
+                    "titleNp": "अन्तर्राष्ट्रिय गरिबी निवारण दिवस",
+                    "titleEn": "International Day for the Eradication of Poverty",
+                    "isHoliday": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "initialIndex": 0
+    }
+  }
+}

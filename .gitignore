@@ -1,0 +1,16 @@
+# Future build/runtime artifacts.
+node_modules/
+dist/
+.cache/
+*.log
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+# Raw third-party investigation material is local evidence, not product assets.
+evidence/hamropatro/
+evidence/snapshots/
+evidence/rea-bundle.json

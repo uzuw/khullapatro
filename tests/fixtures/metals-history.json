@@ -1,0 +1,42 @@
+{
+  "goldData": [
+    {
+      "date": "11",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 296500
+    },
+    {
+      "date": "12",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 294400
+    },
+    {
+      "date": "13",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 292200
+    }
+  ],
+  "silverData": [
+    {
+      "date": "11",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 4440
+    },
+    {
+      "date": "12",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 4415
+    },
+    {
+      "date": "13",
+      "year": "2026",
+      "month": "Oct",
+      "tola": 4355
+    }
+  ]
+}
