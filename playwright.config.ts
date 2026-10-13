@@ -14,7 +14,7 @@ export default defineConfig({
       command: 'npm run start -- --port 3002',
       env: {
         NODE_OPTIONS: '--import ./tests/support/source-fixtures.mjs',
-        OPENPATRO_CACHE_DIR: '.cache/playwright',
+        KHULLAPATRO_CACHE_DIR: '.cache/playwright',
         AUTH_GITHUB_ID: '',
         AUTH_GITHUB_SECRET: '',
         AUTH_URL: 'http://127.0.0.1:3002',
@@ -27,10 +27,10 @@ export default defineConfig({
       command: 'npm run start -- --port 3004',
       env: {
         NODE_OPTIONS: '--import ./tests/support/source-fixtures.mjs',
-        OPENPATRO_CACHE_DIR: '.cache/playwright-auth',
+        KHULLAPATRO_CACHE_DIR: '.cache/playwright-auth',
         AUTH_URL: 'http://localhost:3004',
-        AUTH_SECRET: 'openpatro-test-only-key-never-use-in-production',
-        AUTH_GITHUB_ID: 'openpatro-test-client',
+        AUTH_SECRET: 'khullapatro-test-only-key-never-use-in-production',
+        AUTH_GITHUB_ID: 'khullapatro-test-client',
         AUTH_GITHUB_SECRET: 'not-a-provider-secret',
       },
       url: 'http://127.0.0.1:3004',

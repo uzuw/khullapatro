@@ -30,18 +30,18 @@ const historyFixture = await fixture('metals-history');
 const html = (value: unknown) =>
   `<script type="application/json" id="hp-bootstrap">${JSON.stringify(value)}</script>`;
 const originalFetch = globalThis.fetch;
-const originalDirectory = process.env.OPENPATRO_CACHE_DIR;
+const originalDirectory = process.env.KHULLAPATRO_CACHE_DIR;
 let directory: string;
 beforeEach(async () => {
   clearCacheMemory();
-  directory = await mkdtemp(join(tmpdir(), 'openpatro-test-'));
-  process.env.OPENPATRO_CACHE_DIR = directory;
+  directory = await mkdtemp(join(tmpdir(), 'khullapatro-test-'));
+  process.env.KHULLAPATRO_CACHE_DIR = directory;
 });
 afterEach(async () => {
   clearCacheMemory();
   globalThis.fetch = originalFetch;
-  if (originalDirectory === undefined) delete process.env.OPENPATRO_CACHE_DIR;
-  else process.env.OPENPATRO_CACHE_DIR = originalDirectory;
+  if (originalDirectory === undefined) delete process.env.KHULLAPATRO_CACHE_DIR;
+  else process.env.KHULLAPATRO_CACHE_DIR = originalDirectory;
   await rm(directory, { recursive: true, force: true });
 });
 

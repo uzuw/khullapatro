@@ -13,7 +13,7 @@ export default async function SignInPage({
   const session = githubEnabled ? await auth() : null;
   return (
     <div className="auth-panel">
-      <span className="heading-note">Your OpenPatro</span>
+      <span className="heading-note">Your Khulla Patro</span>
       <h1>{session ? `Hello, ${session.user?.name ?? 'there'}.` : 'Keep it personal.'}</h1>
       <p>The calendar, rashifal, and market pages are always open.</p>
       {query.error ? (

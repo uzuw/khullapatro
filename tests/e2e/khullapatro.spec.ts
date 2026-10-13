@@ -180,7 +180,7 @@ test('configured NextAuth presents sign-in and creates a safe OAuth redirect wit
   expect(result.status()).toBe(302);
   const redirect = new URL(result.headers().location);
   expect(redirect.origin).toBe('https://github.com');
-  expect(redirect.searchParams.get('client_id')).toBe('openpatro-test-client');
+  expect(redirect.searchParams.get('client_id')).toBe('khullapatro-test-client');
   expect(redirect.searchParams.get('redirect_uri')).toBe(origin + '/api/auth/callback/github');
   expect(redirect.searchParams.get('code_challenge')).toBeTruthy();
   expect(redirect.searchParams.get('code_challenge_method')).toBe('S256');

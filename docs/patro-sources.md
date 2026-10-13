@@ -1,4 +1,4 @@
-# OpenPatro: calendar and rashifal source research
+# Khulla Patro: calendar and rashifal source research
 
 This document preserves the initial public-source investigation and proposed acceptance criteria. The local application has since been implemented; see [verification](verification.md) for current results.
 
@@ -29,7 +29,7 @@ Additional live checks began at `2026-10-13T06:14:17.039Z`. Their exact response
 
 The useful data is already embedded as JSON inside `<script id="hp-bootstrap">…</script>` in the returned HTML. JSON can be parsed directly; running the shipped JavaScript is unnecessary for these fields. This is an observed web rendering contract, not an identified documented API.
 
-The bootstrap top-level keys include `path`, `renderPath`, `locale`, `page`, `renderedAt`, `today`, `sidebar`, `data`, and `head`. OpenPatro would only need selected fields from `today` and `data`.
+The bootstrap top-level keys include `path`, `renderPath`, `locale`, `page`, `renderedAt`, `today`, `sidebar`, `data`, and `head`. Khulla Patro would only need selected fields from `today` and `data`.
 
 Observed routes:
 
@@ -123,7 +123,7 @@ The source `today` object supplies `year_ad`, `month_ad`, `date_ad`, `year_bs`, 
 
 The live rashifal response was fetched around `06:14:17Z`, while its `renderedAt` was `2026-10-13T06:09:58.455Z`. Thus a successful HTTP request does not imply that the HTML was rendered at request time. `renderedAt` is a rendering timestamp and must not be relabeled as the prediction's publication time.
 
-The canonical proposed OpenPatro response shapes are in [data-contracts.md](data-contracts.md). They deliberately normalize the raw fields above and distinguish `sourceRenderedAt`, content date, `fetchedAt`, and `checkedAt`. Source observations in this document should not be treated as an alternate product API.
+The canonical proposed Khulla Patro response shapes are in [data-contracts.md](data-contracts.md). They deliberately normalize the raw fields above and distinguish `sourceRenderedAt`, content date, `fetchedAt`, and `checkedAt`. Source observations in this document should not be treated as an alternate product API.
 
 Suggested behavior is a short server cache, bounded request timeout, and a persisted last-known successful snapshot. Retain source date and actual fetch timestamp. After a live failure, label saved content explicitly and preserve its old date. With no usable snapshot, return an unavailable state rather than synthesized calendar events or predictions. Calendar fallback must match the requested BS month.
 
@@ -133,7 +133,7 @@ Compute the current wall-clock date in `Asia/Kathmandu`; do not reuse embedded `
 
 The HTML bootstrap and its field names are undocumented and may change without notice. Network availability, source caching, request limits, historical event coverage, and month-page completeness across the entire inferred range remain unverified. HTML access working in native server-side `fetch` does not establish browser CORS permission. A future server adapter should validate its trust boundary and avoid evaluating upstream scripts or injecting upstream HTML.
 
-The source's calendar and horoscope reuse license, redistribution permission, and terms applying to this extraction were not established. Public accessibility and the possibility of an open-source OpenPatro implementation do not establish an open license for upstream text or data. Attribution should remain visible; publication decisions require the actual applicable terms or a separately licensed data source. This is an unresolved research item, not a finding that reuse is forbidden.
+The source's calendar and horoscope reuse license, redistribution permission, and terms applying to this extraction were not established. Public accessibility and the possibility of an open-source Khulla Patro implementation do not establish an open license for upstream text or data. Attribution should remain visible; publication decisions require the actual applicable terms or a separately licensed data source. This is an unresolved research item, not a finding that reuse is forbidden.
 
 ## Proposed acceptance criteria for a later build
 

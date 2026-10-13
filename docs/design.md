@@ -1,4 +1,4 @@
-# OpenPatro design
+# Khulla Patro design
 
 Implemented locally: three navigable pages with a shared restrained masthead and original art. Calendar remains the primary view.
 

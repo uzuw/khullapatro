@@ -1,10 +1,10 @@
-# OpenPatro task plan
+# Khulla Patro task plan
 
 ## Goal and current phase
 
-Implement the user's simple OpenPatro with Nepali calendar events, daily rashifal, and independent Nepal gold/silver history. The subsequent 2026-10-13 implementation request supersedes the earlier planning-only instruction and specifies Next.js, NextAuth, Tailwind, Framer Motion, next/font, Zod, security headers, next/image, Playwright, ESLint, Prettier, actual Obsidian UI components and beautiful dithered art.
+Implement the user's simple Khulla Patro with Nepali calendar events, daily rashifal, and independent Nepal gold/silver history. The subsequent 2026-10-13 implementation request supersedes the earlier planning-only instruction and specifies Next.js, NextAuth, Tailwind, Framer Motion, next/font, Zod, security headers, next/image, Playwright, ESLint, Prettier, actual Obsidian UI components and beautiful dithered art.
 
-Current phase: local MVP implemented and verified; source published at https://github.com/uzuw/openpatro on the public main branch. Evidence is recorded in docs/verification.md. Public application deployment is outside scope.
+Current phase: local MVP implemented and verified; source published at https://github.com/uzuw/khullapatro on the public main branch. Evidence is recorded in docs/verification.md. Public application deployment is outside scope.
 
 ## Completed planning stages
 
@@ -37,8 +37,12 @@ Current phase: local MVP implemented and verified; source published at https://g
 
 Next.js replaces proposed Vite/Fastify at the user's request. Optional GitHub is used for NextAuth; no provider credentials are supplied, so external OAuth completion remains untested. Persistent normalized files suit one local instance; public hosting/storage/reuse terms remain separate decisions. Test-only source/clock preload isolates browser fixtures on port 3002; normal application on 3001 reads public sources and validated runtime snapshots.
 
-The user has authorized creation and publication of the public `uzuw/openpatro` repository after readiness checks. REA semantic analysis is partial following worker heap exhaustion; no private backend recovery is claimed.
+The user has authorized creation and publication of the public `uzuw/khullapatro` repository after readiness checks. REA semantic analysis is partial following worker heap exhaustion; no private backend recovery is claimed.
 
 ## Next action
 
-The reviewed README, screenshots, MIT-licensed implementation, tests, and documentation are published as `uzuw/openpatro`. Public repository publication is complete. Local MVP remains ready at http://localhost:3001; optional external OAuth needs provider credentials.
+The reviewed README, screenshots, MIT-licensed implementation, tests, and documentation are published as `uzuw/khullapatro`. Public repository publication is complete. Local MVP remains ready at http://localhost:3001; optional external OAuth needs provider credentials.
+
+## Branding update
+
+The user requested Khulla Patro throughout the application and a concise README. The GitHub repository is renamed to uzuw/khullapatro; visible branding, metadata, package identity, docs, cache configuration, and screenshot previews have been updated and verified. Detailed setup is in docs/development.md. The verified rename is complete and ready for user review at http://localhost:3001; publication to main is authorized.

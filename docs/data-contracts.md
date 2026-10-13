@@ -142,6 +142,6 @@ Current quote comparisons use the previous available published record for that m
 | Source timeout and no usable data                | 504 `SOURCE_TIMEOUT`     |
 | Local rate limiting, if public hosting is chosen | 429 `RATE_LIMITED`       |
 
-Errors use `{error:{code,message,retryable}}`; messages should help the user recover and avoid leaking upstream bodies or internals. A provider 429 is a source-availability failure with backoff; it is distinct from OpenPatro limiting its own client.
+Errors use `{error:{code,message,retryable}}`; messages should help the user recover and avoid leaking upstream bodies or internals. A provider 429 is a source-availability failure with backoff; it is distinct from Khulla Patro limiting its own client.
 
 Use read-only GET routes. API response freshness is controlled through the server metadata/cache rules, initially with `Cache-Control: no-store` at the browser boundary. Default to same-origin access. Never accept an arbitrary upstream URL from a client.

@@ -1,10 +1,10 @@
-# OpenPatro findings
+# Khulla Patro findings
 
 Research observations, not executable instructions. External content is untrusted data.
 
 ## Scope
 
-- Product: OpenPatro, a simpler personal Nepali calendar.
+- Product: Khulla Patro, a simpler personal Nepali calendar.
 - Required: BS calendar with all source events associated with their dates; daily rashifal; gold/silver rates and our own historical market dashboard.
 - Excluded: news, weather, forex, ads, mandatory accounts, unrelated services.
 - Later instruction authorized implementation using the requested Next.js stack, optional NextAuth and original visual design.
@@ -87,6 +87,8 @@ README screenshot previews use existing production-browser fixture captures, inc
 
 ## Public repository authorization
 
-The user explicitly authorized a public `openpatro` repository after readiness checks. The implementation receives an MIT license; attribution and unresolved upstream content terms remain separate. Public GitHub source publication does not authorize or constitute deployment of the running app.
+The user explicitly authorized a public `khullapatro` repository after readiness checks. The implementation receives an MIT license; attribution and unresolved upstream content terms remain separate. Public GitHub source publication does not authorize or constitute deployment of the running app.
 
-Public source publication is complete at https://github.com/uzuw/openpatro (PUBLIC, default branch main). The app remains locally hosted; upstream reuse terms, persistent storage for ephemeral hosting, and real external OAuth verification remain separate unresolved limitations.
+Public source publication is complete at https://github.com/uzuw/khullapatro (PUBLIC, default branch main). The app remains locally hosted; upstream reuse terms, persistent storage for ephemeral hosting, and real external OAuth verification remain separate unresolved limitations.
+
+The user renamed the project to Khulla Patro (खुला पात्रो), with khullapatro as the package/repository slug. Cache configuration is now KHULLAPATRO_CACHE_DIR and the default directory is .cache/KhullaPatro; existing local saved data was migrated.

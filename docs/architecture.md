@@ -1,4 +1,4 @@
-# OpenPatro architecture
+# Khulla Patro architecture
 
 Implemented after the user's 2026-10-13 stack request. Next.js App Router replaces the original proposed Vite/Fastify split; one service serves the pages and normalized API. Public deployment is outside this task.
 
@@ -56,7 +56,7 @@ Gregorian keys use `YYYY-MM-DD`; BS fields stay separate. `Asia/Kathmandu` deter
 | Metals quote                   | 15 minutes, invalidate on Nepal rollover | Original bulletin date and previous available comparison retained     |
 | Metals history                 | 6 hours                                  | Independent retrieval/freshness preserved when quote refresh succeeds |
 
-Default snapshots are in `.cache/OpenPatro`, overridable with `OPENPATRO_CACHE_DIR`. One in-flight request per cache key, bounded memory, 12-second fetch timeout, 5 MB body limit and one-minute failure backoff bound source traffic. Validated envelopes are written to a temporary file then atomically renamed. Missing/corrupt snapshots are discarded; invalid refreshes never replace successful data. If disk persistence fails, the UI receives a warning that restart fallback is unavailable.
+Default snapshots are in `.cache/KhullaPatro`, overridable with `KHULLAPATRO_CACHE_DIR`. One in-flight request per cache key, bounded memory, 12-second fetch timeout, 5 MB body limit and one-minute failure backoff bound source traffic. Validated envelopes are written to a temporary file then atomically renamed. Missing/corrupt snapshots are discarded; invalid refreshes never replace successful data. If disk persistence fails, the UI receives a warning that restart fallback is unavailable.
 
 `fetchedAt` means successful retrieval; `checkedAt` means refresh attempt. Reading disk does not make old content newly fetched. Quote and history failures remain independent. Refresh is request-driven; there are no scheduled jobs.
 

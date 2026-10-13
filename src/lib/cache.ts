@@ -25,7 +25,7 @@ const memory = new Map<string, Envelope<unknown>>();
 const inflight = new Map<string, Promise<Envelope<unknown>>>();
 const failures = new Map<string, { until: number; error: SourceError }>();
 const directory = () =>
-  process.env.OPENPATRO_CACHE_DIR || join(process.cwd(), '.cache', 'OpenPatro');
+  process.env.KHULLAPATRO_CACHE_DIR || join(process.cwd(), '.cache', 'KhullaPatro');
 
 async function persist(key: string, value: Envelope<unknown>) {
   const dir = directory();

@@ -8,7 +8,7 @@ export async function fetchSource(url: string): Promise<string> {
       redirect: 'error',
       headers: {
         Accept: 'text/html, application/json',
-        'User-Agent': 'OpenPatro/0.1 (local calendar and Nepal benchmark reader)',
+        'User-Agent': 'KhullaPatro/0.1 (local calendar and Nepal benchmark reader)',
       },
     });
     if (!response.ok) {

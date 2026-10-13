@@ -1,4 +1,4 @@
-# OpenPatro progress
+# Khulla Patro progress
 
 ## 2026-10-13
 
@@ -19,7 +19,7 @@
 ## Verification state
 
 - Public data requests were checked during research; those checks establish point-in-time source behavior only.
-- Any earlier adapter self-checks belong to discarded starter code. They are not verification of an implemented OpenPatro application.
+- Any earlier adapter self-checks belong to discarded starter code. They are not verification of an implemented Khulla Patro application.
 - No UI implementation or deployment is part of the current deliverable.
 
 ## Planning validation
@@ -69,8 +69,8 @@ The user explicitly requested implementation with the modern Next.js stack and d
 
 ## Public repository preparation
 
-- User authorized publishing as `openpatro` after readiness checks.
-- Confirmed authenticated GitHub account `uzuw` and no existing `uzuw/openpatro` repository.
+- User authorized publishing as `khullapatro` after readiness checks.
+- Confirmed authenticated GitHub account `uzuw` and no existing `uzuw/khullapatro` repository.
 - Added MIT license and real clone instructions; preserved upstream reuse caveats and third-party attribution.
 - Rechecking compilation, unit/browser verification, formatting, and publishable files before the initial commit. Secrets, runtime snapshots, raw source downloads, and REA export remain excluded.
 
@@ -78,6 +78,19 @@ The user explicitly requested implementation with the modern Next.js stack and d
 
 ## Public GitHub publication complete
 
-- Created https://github.com/uzuw/openpatro as a public repository and pushed the initial implementation to main. GitHub reports PUBLIC visibility and main as the default branch.
+- Created https://github.com/uzuw/khullapatro as a public repository and pushed the initial implementation to main. GitHub reports PUBLIC visibility and main as the default branch.
 - README includes clone/install instructions, motivation, investigation method, and four screenshot previews. MIT license and third-party notices are included.
 - Raw third-party downloads, REA export, runtime caches, local secrets, dependencies, build output, and browser reports are excluded. No live app deployment was performed.
+
+## Khulla Patro rename
+
+- User requested Khulla Patro throughout the site, project, and README. Repository/package slug is khullapatro.
+- Renamed visible branding, metadata, error/loading/sign-in copy, package identity, source user agent, cache configuration, and documentation. Existing local validated cache was migrated.
+- Shortened README into scannable sections with collapsible screenshots; detailed setup moved to docs/development.md.
+- Regenerating screenshots and verifying mobile branding before publishing the rename.
+
+- Rename verification passes: build, TypeScript, lint, formatting, 22 unit and 11 browser checks. New desktop/mobile preview captures inspected; no mobile overflow. Additional in-app browser inspection was unavailable due to an attach timeout.
+
+- Renamed the public GitHub repository to https://github.com/uzuw/khullapatro and updated the local remote and repository description.
+
+- Final brand sweep found no former name in tracked text. README shortened from 1,431 to 382 words; README and development-guide local links validated. Rename implementation and verification are complete; publication to main is authorized.

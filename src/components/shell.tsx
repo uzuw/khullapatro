@@ -28,12 +28,12 @@ export function Shell({
       </a>
       <header className="masthead">
         <div className="page-width flex h-21 items-center justify-between gap-4">
-          <Link href="/" className="brand" aria-label="OpenPatro home">
+          <Link href="/" className="brand" aria-label="Khulla Patro home">
             <span className="brand-mark">
               <CalendarDays size={22} strokeWidth={1.65} />
             </span>
             <span>
-              open<span className="font-extrabold">patro</span>
+              Khulla <span className="font-extrabold">Patro</span>
               <span className="brand-dot">.</span>
             </span>
           </Link>
@@ -80,7 +80,7 @@ export function Shell({
       </main>
       <footer className="page-width footer">
         <span>
-          OpenPatro <span className="footer-dot">·</span> Made for a little less noise.
+          Khulla Patro <span className="footer-dot">·</span> Made for a little less noise.
         </span>
         <span lang="ne" className="np">
           पात्रो, राशिफल र सुनचाँदी।

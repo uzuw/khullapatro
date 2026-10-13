@@ -79,3 +79,7 @@ The available in-app browser independently showed the live current calendar, the
 ## Public repository readiness check
 
 Before the authorized public GitHub push on 2026-10-13, the production build, TypeScript, ESLint, Prettier, all 22 unit tests, and all 11 production Chromium tests passed again. Production dependency audit reported zero vulnerabilities. The staged file inventory was checked for local environment secret values, token/private-key patterns, excluded raw evidence/runtime artifacts, and broken README links; no issues were found. MIT applies to the implementation, with third-party component notices and separate upstream content limitations retained. This check does not verify external GitHub OAuth completion or constitute a public application deployment.
+
+## Khulla Patro rename verification
+
+After the branding, package, cache configuration, and documentation rename, the production build, TypeScript, ESLint, formatting, all 22 unit checks, and all 11 production Chromium checks pass. Four README previews were regenerated from the new build. Desktop and 360px mobile calendar screenshots were visually inspected; the longer name fits and all source events remain accessible. The in-app browser could not attach for an additional live inspection; verification here uses the authored Chromium checks and inspected captures.

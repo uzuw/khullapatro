@@ -16,7 +16,7 @@ Exit check: source fixtures and expected normalized contracts are documented, de
 
 ## Stage 1: Calendar MVP (implemented)
 
-Deliverable: locally runnable OpenPatro with accurate BS calendar and all date events. This is the first working product milestone.
+Deliverable: locally runnable Khulla Patro with accurate BS calendar and all date events. This is the first working product milestone.
 
 1. Build inert bootstrap extraction and calendar validation against captured, dated source fixtures.
 2. Add the calendar route, per-month cache and atomic valid snapshot persistence.

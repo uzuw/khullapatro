@@ -11,7 +11,7 @@ const nepali = Noto_Sans_Devanagari({
   display: 'swap',
 });
 export const metadata: Metadata = {
-  title: { default: 'OpenPatro · A simpler Nepali calendar', template: '%s · OpenPatro' },
+  title: { default: 'Khulla Patro · A simpler Nepali calendar', template: '%s · Khulla Patro' },
   description:
     'Nepali calendar events, daily rashifal, and Nepal gold and silver rates. A little less noise.',
 };
