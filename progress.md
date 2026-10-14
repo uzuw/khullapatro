@@ -112,3 +112,11 @@ The user explicitly requested implementation with the modern Next.js stack and d
 - First production deployment 7c9542d is READY in bom1. Assigned and verified the public production domain https://khullapatro.vercel.app; generated/team URLs retain Vercel protection.
 - Live homepage, rashifal, metals, all three APIs, session, and CSRF endpoints return 200 with security headers. Current source comparisons match, but 2100/12 returned a transport failure from Vercel.
 - Parallel first loads exposed a spurious CACHE_NOT_PERSISTED warning when another request had already saved identical quote data. Added a regression check and equivalent-content recovery, preserving actual saved retrieval timestamps. Added bounded server transport diagnostics for the far-future month failure.
+
+## Production deployment complete (2026-10-14)
+
+- Public site: https://khullapatro.vercel.app, GitHub-linked production in uzuws-projects with private shared snapshots in bom1. Generated/team URLs retain deployment protection.
+- Application commit 77341ce passes live deep source/API comparisons at 2026-10-14T05:13:03.828Z, including all requested sections and four boundary/year-transition months.
+- Fixed the concurrency warning and observed calendar-language redirects. Build, static checks, 29 unit tests, and 11 production browser checks pass.
+- Actual browser verified selected-date completeness, Pisces selection, Silver/7D updates, and a 360px mobile calendar without overflow; viewport reset. Production auth session/CSRF are healthy, with optional GitHub still unconfigured.
+- AUTH_URL is set to the production domain. No raw investigation assets, local secrets, or test-generated product fallback were deployed. No paid upgrade, custom domain purchase, monitors, or scheduled jobs were created.

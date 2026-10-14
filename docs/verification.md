@@ -87,3 +87,15 @@ After the branding, package, cache configuration, and documentation rename, the 
 ## Vercel release preparation (2026-10-14)
 
 Production build, typecheck, lint, formatting, 25 unit checks, and 11 production Chromium checks pass. The production dependency audit is clean. A real private-Blob integration check fetched and validated calendar 2083/6, persisted it, cleared process memory, and reloaded identical data from a snapshot with the original fetchedAt timestamp (2026-10-14T04:57:26.283Z). This checks real storage access from the local runtime; deployed source/API/UI checks follow after the build is hosted.
+
+## Production deployment verification (2026-10-14)
+
+Live URL: https://khullapatro.vercel.app. Application commit: 77341ce. Build/typecheck/lint/format pass; 29 unit checks pass after adding snapshot concurrency and strict redirect coverage. Eleven production Chromium checks pass.
+
+At 2026-10-14T05:13:03.828Z, direct source-to-production API deep comparisons pass for the current calendar, all twelve rashifal readings, exact gold/silver quote and historical rows, four boundary/year-transition calendar months, and 7/30/365-day period calculations. Current calendar has 31 in-month days, 35 cells and 72 returned events. Quotes are 289,500 gold and 4,255 silver NPR/tola, dated 2026-10-14, with 366 historical records. The four sampled months retain the dates listed above.
+
+The in-app browser verified six full events in selected-date details, dated real rashifal and Pisces selection, and Silver/7D chart and table interaction. A fresh mobile tab had innerWidth 360 and content width 345 with no document overflow. Browser viewport override was reset afterward. No application exception was observed in that tab’s console; Electron host warnings were separate. Public pages/APIs and NextAuth session/CSRF return 200 with security headers.
+
+Private storage was exercised with real validated calendar data, then read after cleared process memory with original timestamps preserved. Source redirect diagnostics identified `/en/calendar/...` locale redirects; strict allowlisting plus Nepali request preference fixed the deployed boundary failures without following access-control or anti-bot redirects. A redundant CLI upload was canceled while the Git-triggered build proceeded.
+
+Remaining limits: source reuse terms and undocumented upstream stability, Hobby storage quotas, per-instance deduplication/backoff, and unconfigured external GitHub OAuth.

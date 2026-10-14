@@ -41,7 +41,7 @@ The user has authorized creation and publication of the public `uzuw/khullapatro
 
 ## Next action
 
-The reviewed README, screenshots, MIT-licensed implementation, tests, and documentation are published as `uzuw/khullapatro`. Public repository publication is complete. Local MVP remains ready at http://localhost:3001; optional external OAuth needs provider credentials.
+Deployment is complete at https://khullapatro.vercel.app. Source and documentation are published as `uzuw/khullapatro`. The three sections are verified publicly; optional external OAuth needs provider credentials.
 
 ## Branding update
 
@@ -54,5 +54,7 @@ The user requested Khulla Patro throughout the application and a concise README.
 - [x] Obtain access to uzuws-projects through the authenticated same-scope CLI fallback.
 - [x] Add shared persistent snapshot support and deployment exclusions.
 - [x] Verify build, source failures, real private snapshot persistence/reload, and 11 browser interactions.
-- [ ] Link the Git repository, configure storage/environment, and deploy production.
-- [ ] Verify deployed source/API/UI and record the actual URL and commit.
+- [x] Link the Git repository, configure storage/environment, and deploy production.
+- [x] Verify deployed source/API/UI and record the actual URL and application commit (77341ce).
+
+Production source comparisons passed at 2026-10-14T05:13:03.828Z after fixing the concurrent snapshot race and bounded calendar locale redirects. No additional features or scheduled jobs were introduced.

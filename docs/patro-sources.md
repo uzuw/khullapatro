@@ -146,3 +146,9 @@ The source's calendar and horoscope reuse license, redistribution permission, an
 - A restart retains the last successful snapshot. A stale snapshot never acquires a new fetch timestamp or an invented source date merely because it was read.
 - Tests around Nepal midnight verify that highlighting and rashifal freshness follow Nepal's current date rather than the user's device timezone or saved `isToday`.
 - Manual verification checks the calendar and predictions against the same dated source page. Such verification checks fidelity to the source, not independent astronomical or editorial correctness.
+
+## Deployment observation: calendar language redirects (2026-10-14)
+
+Vercel runtime logs observed the public month routes redirecting to `/en/calendar/2100/12` and `/en/calendar/2084/1` on the same Hamro Patro origin. These are direct HTTP/runtime observations, not new REA analysis or evidence of private backend recovery. English-prefixed responses retain BS/AD mappings, Nepali month/event fields, and regional wording; `tithiShort` can be localized. The adapter now requests Nepali explicitly and permits only one same-origin canonical slash or observed calendar-language redirect for the same year/month, with unchanged query and original timeout. Other paths/origins, challenge queries, and chains remain rejected.
+
+After that change, the deployed current calendar and all four sampled months deep-match the directly inspected normalized source responses at 2026-10-14T05:13:03.828Z, including tithi. This does not establish coverage of every month or permission to redistribute content.
