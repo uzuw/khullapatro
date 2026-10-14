@@ -2,6 +2,8 @@
 
 **A simpler Nepali calendar. Less noise, more room for your day.**
 
+`v0.2.0` · Light & dark themes · Made by [@uzuw](https://github.com/uzuw)
+
 [Live site](https://khullapatro.vercel.app) · [Installation](#installation) · [Screenshots](#screenshots) · [How it works](#how-it-works) · [MIT license](LICENSE)
 
 ## Why Khulla Patro?

@@ -98,3 +98,13 @@ Vercel deployment is now explicitly authorized. The connector identity probe suc
 The CLI device flow resolved deployment access. The Vercel project is prj_jajUgwgXMOJiNqEqcpYcbDtEceIs under team_jTvLy2L6Dhef4vKGlYngFNAD; private Blob store store_8cGHqqXPQxHGrr7b is connected. Shared snapshot support uses conditional ETag writes; per-process source deduplication remains a limitation. Hobby storage operation allowances can be exhausted under sustained use; no paid upgrade was requested.
 
 Deployment is verified publicly at https://khullapatro.vercel.app. Production application commit 77341ce matches live sources, including the previously failing boundary months, at 2026-10-14T05:13:03.828Z. The root cause was a same-origin `/en/calendar/...` redirect; strict allowlisting and Nepali language preference resolved it. Private snapshot concurrency is handled without inventing retrieval timestamps. External OAuth and source reuse terms remain unresolved.
+
+## Theme/version preview evidence (2026-10-14)
+
+- Read-only GitHub metadata confirms repository uzuw/khullapatro already links to https://khullapatro.vercel.app; author profile is https://github.com/uzuw. Existing package version was 0.1.0.
+- v0.2.0 is a proposed local minor release, not an existing published tag/release. The user explicitly requires preview approval before remote updates.
+- Native CSS light-dark() uses the selected document color-scheme; paired colors retain the original light palette. The small client toggle observes the document theme with useSyncExternalStore; a static first-party head script applies stored/system preference before paint. Blocked browser storage falls back to a working current-page toggle.
+
+- Final visual inspection covered dark calendar, rashifal, and metals; theme regression checks pass with reduced motion for stable screenshots. The existing light palette is preserved, and all 13 browser / 29 unit checks pass. Production remains unchanged pending approval.
+
+- Footer refinement replaces the @ prefix with a 14px inline GitHub mark and visible uzuw text. The profile link remains https://github.com/uzuw, with accessible name "uzuw on GitHub". No dependency added.

@@ -120,3 +120,18 @@ The user explicitly requested implementation with the modern Next.js stack and d
 - Fixed the concurrency warning and observed calendar-language redirects. Build, static checks, 29 unit tests, and 11 production browser checks pass.
 - Actual browser verified selected-date completeness, Pisces selection, Silver/7D updates, and a 360px mobile calendar without overflow; viewport reset. Production auth session/CSRF are healthy, with optional GitHub still unconfigured.
 - AUTH_URL is set to the production domain. No raw investigation assets, local secrets, or test-generated product fallback were deployed. No paid upgrade, custom domain purchase, monitors, or scheduled jobs were created.
+
+## Local release preview (2026-10-14)
+
+- User requested review first; remote GitHub metadata, tags/releases, and production updates are paused for this change pending approval.
+- Prepared v0.2.0 locally: header theme toggle, system preference with saved override, theme-aware surfaces/charts, and @uzuw footer credit. No theme dependency or new product section.
+- GitHub already has the correct production website link. Proposed description and release details are recorded locally. Verification is in progress.
+
+- Final preview verification: production build, lint, typecheck, formatting, 29 unit tests, and 13 browser checks pass. Browser checks cover system default, explicit override across reload/navigation, blocked storage, keyboard toggle, author/version, and dark 360px layouts on all three routes. No page exceptions.
+- In-app browser verified the real-source calendar and rashifal and saved preference; only the known Electron host warning was observed. Repeatable screenshots in test-results/preview-*.png use fixed source fixtures, with synthetic rashifal prose clearly treated as test data.
+- The local preview runs at http://127.0.0.1:3001. No commit, push, deployment, GitHub metadata mutation, or release/tag creation was performed. Awaiting requested user approval.
+
+- User requested replacing the footer @ with the GitHub logo. Updated the shared footer link to a small inline GitHub mark followed by uzuw, with an accessible profile label. Publication is still pending final review.
+- Footer refinement verified: production build and lint pass; both theme browser checks pass with the updated accessible GitHub link. Local preview refreshed; footer screenshot saved to test-results/preview-footer.png.
+
+- User authorized publishing the reviewed v0.2.0 update to Vercel. Preparing the release commit and Git-linked production deployment.

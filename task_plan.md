@@ -58,3 +58,18 @@ The user requested Khulla Patro throughout the application and a concise README.
 - [x] Verify deployed source/API/UI and record the actual URL and application commit (77341ce).
 
 Production source comparisons passed at 2026-10-14T05:13:03.828Z after fixing the concurrent snapshot race and bounded calendar locale redirects. No additional features or scheduled jobs were introduced.
+
+## Local v0.2.0 preview — approval pending
+
+The user requested a top dark-mode toggle, author GitHub footer link, version, and GitHub description/site details, with review before publication. Prepare and verify locally. Do not push, deploy, change remote metadata, or create a tag/release until approval. Proposed release details are in docs/release-preview.md.
+
+- [x] Implement theme preference and shared footer credit/version.
+- [x] Verify desktop/mobile themes, storage behavior, and existing sections.
+- [x] Prepare and present local screenshots and proposed metadata for review.
+- [ ] Publish only after user approval.
+
+- [x] Replace the footer @ prefix with the GitHub logo per review feedback; verify and refresh local preview.
+
+## v0.2.0 publication authorized
+
+The user approved updating Vercel with the reviewed footer logo and dark-mode changes. Publish main, update the reviewed GitHub description, and verify production.

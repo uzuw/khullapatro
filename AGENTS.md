@@ -6,6 +6,10 @@
 
 This supersedes the earlier planning-only instruction. Implement and verify the three product sections locally. The user has now authorized public deployment to Vercel. Prepare, deploy, and verify the existing three sections; no additional product features are authorized. Preserve the original product scope while following the new stack and visual requirements.
 
+## Current release authorization
+
+The user approved publishing the reviewed v0.2.0 update to Vercel after requesting the GitHub logo in the footer. Push the reviewed changes to the existing main branch, retain the production project/domain, and verify the live theme control and author/version footer. No additional product features are authorized.
+
 ## Read first
 
 1. `README.md` for the document index and current project state.

@@ -348,10 +348,16 @@ function PriceChart({ rows, metal }: { rows: Quote[]; metal: Metal }) {
                 x2="965"
                 y1={y(value)}
                 y2={y(value)}
-                stroke="#e9e9ed"
+                stroke="var(--chart-grid)"
                 strokeDasharray="3 5"
               />
-              <text x="65" y={y(value) + 4} textAnchor="end" fill="#7c7f8b" fontSize="12">
+              <text
+                x="65"
+                y={y(value) + 4}
+                textAnchor="end"
+                fill="var(--chart-label)"
+                fontSize="12"
+              >
                 <tspan className="chart-wide-label">{money(Math.round(value))}</tspan>
                 <tspan className="chart-mobile-label">
                   {new Intl.NumberFormat('en', {
@@ -392,15 +398,15 @@ function PriceChart({ rows, metal }: { rows: Quote[]; metal: Metal }) {
               cy={y(active[metal]!)}
               r="5"
               fill="currentColor"
-              stroke="white"
+              stroke="var(--chart-point-border)"
               strokeWidth="2"
             />
           </g>
         ) : null}
-        <text x="80" y="272" fill="#7c7f8b" fontSize="12">
+        <text x="80" y="272" fill="var(--chart-label)" fontSize="12">
           {formatDate(rows[0].date)}
         </text>
-        <text x="960" y="272" fill="#7c7f8b" textAnchor="end" fontSize="12">
+        <text x="960" y="272" fill="var(--chart-label)" textAnchor="end" fontSize="12">
           {formatDate(rows.at(-1)!.date)}
         </text>
       </svg>

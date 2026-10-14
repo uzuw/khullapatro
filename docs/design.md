@@ -15,3 +15,7 @@ Framer Motion adds short page/sign fades and a moving navigation marker. System 
 All pages identify sources and content dates. Missing content is unavailable or visibly dated saved data; placeholder prices/readings are never inserted. No news, weather, forex, advertising, market predictions or unrelated dashboard tiles are included.
 
 Desktop/mobile visual checks and any material limits are recorded in [verification.md](verification.md).
+
+## Light and dark themes
+
+The top-right moon/sun button switches the three public pages. Default follows the device; an explicit choice is saved locally. Dark mode uses charcoal surfaces with muted rose, lavender, brass, and silver accents, including chart axes and interactive states. The footer credits @uzuw and displays the package version supplied by the server layout. No new section or sign-in requirement is introduced.
