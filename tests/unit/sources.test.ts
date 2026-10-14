@@ -413,3 +413,46 @@ test('fresh bulletin with failed history retains independent saved-history prove
   assert.deepEqual(partial.data.history, first.data.history);
   assert(partial.meta.warnings.some((w) => w.code === 'HISTORY_STALE'));
 });
+
+test('source fetching follows one same-origin canonical slash redirect within the same deadline', async () => {
+  const calls: { url: string; signal: AbortSignal | null | undefined }[] = [];
+  globalThis.fetch = async (url, options) => {
+    assert.equal(options?.redirect, 'manual');
+    calls.push({ url: String(url), signal: options?.signal });
+    return calls.length === 1
+      ? new Response(null, { status: 308, headers: { location: '/calendar/2100/12/' } })
+      : new Response('verified response');
+  };
+  assert.equal(
+    await fetchSource('https://www.hamropatro.com/calendar/2100/12'),
+    'verified response',
+  );
+  assert.equal(calls.length, 2);
+  assert.equal(calls[1].url, 'https://www.hamropatro.com/calendar/2100/12/');
+  assert.equal(calls[0].signal, calls[1].signal);
+});
+
+test('source fetching rejects changed origins, login paths, challenge queries, and redirect chains', async (context) => {
+  context.mock.method(console, 'error', () => {});
+  for (const location of [
+    'https://example.com/calendar/2100/12/',
+    '/login',
+    '/calendar/2100/12?__cf_chl_rt_tk=challenge',
+    'https://user:password@www.hamropatro.com/calendar/2100/12/',
+  ]) {
+    let calls = 0;
+    globalThis.fetch = async () => {
+      calls++;
+      return new Response(null, { status: 302, headers: { location } });
+    };
+    await assert.rejects(fetchSource('https://www.hamropatro.com/calendar/2100/12'), SourceError);
+    assert.equal(calls, 1);
+  }
+  let calls = 0;
+  globalThis.fetch = async () => {
+    calls++;
+    return new Response(null, { status: 308, headers: { location: '/calendar/2100/12/' } });
+  };
+  await assert.rejects(fetchSource('https://www.hamropatro.com/calendar/2100/12'), SourceError);
+  assert.equal(calls, 2);
+});

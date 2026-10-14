@@ -2,15 +2,40 @@ import { SourceError } from '../contracts';
 
 export async function fetchSource(url: string): Promise<string> {
   try {
-    const response = await fetch(url, {
+    const options: RequestInit = {
       cache: 'no-store',
       signal: AbortSignal.timeout(12_000),
-      redirect: 'error',
+      redirect: 'manual',
       headers: {
         Accept: 'text/html, application/json',
         'User-Agent': 'KhullaPatro/0.1 (local calendar and Nepal benchmark reader)',
       },
-    });
+    };
+    let response = await fetch(url, options);
+    if (response.status >= 300 && response.status < 400) {
+      const original = new URL(url);
+      const location = response.headers.get('location');
+      const target = location ? new URL(location, original) : null;
+      // Follow one canonical trailing-slash redirect, never a login/challenge or another origin.
+      const canonical =
+        target &&
+        target.href !== original.href &&
+        target.protocol === 'https:' &&
+        target.origin === original.origin &&
+        target.pathname.replace(/\/$/, '') === original.pathname.replace(/\/$/, '') &&
+        target.search === original.search &&
+        !target.hash &&
+        !target.username &&
+        !target.password;
+      await response.body?.cancel();
+      if (canonical) response = await fetch(target.href, options);
+      else
+        console.error('Declined upstream redirect', {
+          url,
+          destination: target ? `${target.origin}${target.pathname}` : null,
+          queryChanged: target ? target.search !== original.search : false,
+        });
+    }
     if (!response.ok) {
       if (response.status === 404 && url.includes('/calendar/'))
         throw new SourceError(
