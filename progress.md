@@ -108,3 +108,7 @@ The user explicitly requested implementation with the modern Next.js stack and d
 
 - 2026-10-14 release checks pass: production build, typecheck, lint, formatting, 25 unit checks, 11 browser checks, and production dependency audit.
 - Real private Blob integration preserved a validated calendar snapshot across cleared process memory with identical data and original retrieval timestamp. GitHub-linked production deployment is next.
+
+- First production deployment 7c9542d is READY in bom1. Assigned and verified the public production domain https://khullapatro.vercel.app; generated/team URLs retain Vercel protection.
+- Live homepage, rashifal, metals, all three APIs, session, and CSRF endpoints return 200 with security headers. Current source comparisons match, but 2100/12 returned a transport failure from Vercel.
+- Parallel first loads exposed a spurious CACHE_NOT_PERSISTED warning when another request had already saved identical quote data. Added a regression check and equivalent-content recovery, preserving actual saved retrieval timestamps. Added bounded server transport diagnostics for the far-future month failure.

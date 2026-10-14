@@ -2,7 +2,7 @@
 
 **A simpler Nepali calendar. Less noise, more room for your day.**
 
-[Installation](#installation) · [Screenshots](#screenshots) · [How it works](#how-it-works) · [MIT license](LICENSE)
+[Live site](https://khullapatro.vercel.app) · [Installation](#installation) · [Screenshots](#screenshots) · [How it works](#how-it-works) · [MIT license](LICENSE)
 
 ## Why Khulla Patro?
 

@@ -64,6 +64,12 @@ export async function fetchSource(url: string): Promise<string> {
         'SOURCE_TIMEOUT',
         'The source took too long to respond. Please try again.',
       );
+    const cause = error instanceof Error ? error.cause : undefined;
+    console.error('Upstream transport failure', {
+      url,
+      error: error instanceof Error ? error.name : 'Unknown',
+      cause: cause instanceof Error ? cause.message.slice(0, 160) : undefined,
+    });
     throw new SourceError(
       502,
       'SOURCE_UNAVAILABLE',

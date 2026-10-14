@@ -121,3 +121,23 @@ test('oversized, unavailable, and unsafe-path snapshots are rejected without exp
   const huge = { ...envelope('2026-10-13T06:00:00Z'), data: 'x'.repeat(5_000_001) };
   assert.equal(await writeSnapshot('quote', huge, client), false);
 });
+
+test('concurrent first writers accept identical saved content without changing its retrieval time', async () => {
+  const incoming = envelope('2026-10-13T08:00:00Z');
+  const winner = {
+    ...incoming,
+    meta: { ...incoming.meta, fetchedAt: '2026-10-13T07:59:59Z' },
+  };
+  let reads = 0;
+  const client = {
+    get: (async () => (++reads === 1 ? null : result(JSON.stringify(winner)))) as typeof get,
+    put: (async () => {
+      throw new Error('Already exists');
+    }) as typeof put,
+  };
+  assert.equal(await writeSnapshot('quote', incoming, client), true);
+  assert.equal(
+    JSON.parse((await readSnapshot('quote', client))!).meta.fetchedAt,
+    winner.meta.fetchedAt,
+  );
+});

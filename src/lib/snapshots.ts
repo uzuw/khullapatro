@@ -2,7 +2,7 @@ import { mkdir, readFile, rename, writeFile, unlink } from 'node:fs/promises';
 import { join } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { get, put } from '@vercel/blob';
-import type { Envelope } from './contracts';
+import { type Envelope, sourceMetaSchema } from './contracts';
 
 type BlobClient = { get: typeof get; put: typeof put };
 const blobClient = { get, put };
@@ -97,7 +97,24 @@ export async function writeSnapshot(
       });
       return true;
     } catch {
-      return false;
+      // Another cold instance may have saved the same validated content first.
+      // Keep its actual retrieval timestamp instead of claiming our timestamp was saved.
+      try {
+        const raw = await readSnapshot(key, client);
+        const saved = raw ? JSON.parse(raw) : null;
+        const meta = sourceMetaSchema.safeParse(saved?.meta);
+        return !!(
+          saved?.schemaVersion === 1 &&
+          meta.success &&
+          Date.parse(meta.data.fetchedAt) <= Date.now() &&
+          meta.data.source === value.meta.source &&
+          meta.data.sourceUrl === value.meta.sourceUrl &&
+          meta.data.sourceDate === value.meta.sourceDate &&
+          JSON.stringify(saved.data) === JSON.stringify(value.data)
+        );
+      } catch {
+        return false;
+      }
     }
   }
   if (storage() !== 'file') return false;
