@@ -56,7 +56,7 @@ Gregorian keys use `YYYY-MM-DD`; BS fields stay separate. `Asia/Kathmandu` deter
 | Metals quote                   | 15 minutes, invalidate on Nepal rollover | Original bulletin date and previous available comparison retained     |
 | Metals history                 | 6 hours                                  | Independent retrieval/freshness preserved when quote refresh succeeds |
 
-Default snapshots are in `.cache/KhullaPatro`, overridable with `KHULLAPATRO_CACHE_DIR`. One in-flight request per cache key, bounded memory, 12-second fetch timeout, 5 MB body limit and one-minute failure backoff bound source traffic. Validated envelopes are written to a temporary file then atomically renamed. Missing/corrupt snapshots are discarded; invalid refreshes never replace successful data. If disk persistence fails, the UI receives a warning that restart fallback is unavailable.
+Default snapshots are in `.cache/KhullaPatro`, overridable with `KHULLAPATRO_CACHE_DIR`. One in-flight request per cache key, bounded memory, 12-second fetch timeout, 5 MB body limit and one-minute failure backoff bound source traffic. Validated envelopes are written to a temporary file then atomically renamed. Missing/corrupt snapshots are discarded; invalid refreshes never replace successful data. If persistence fails, the UI receives a warning that the latest refresh could not be saved for future requests.
 
 `fetchedAt` means successful retrieval; `checkedAt` means refresh attempt. Reading disk does not make old content newly fetched. Quote and history failures remain independent. Refresh is request-driven; there are no scheduled jobs.
 
@@ -66,7 +66,7 @@ Development/production commands bind to loopback port 3001. NextAuth needs a loc
 
 All routes set nosniff, DENY framing, strict-origin referrer policy, disabled camera/microphone/geolocation and a same-origin CSP. Production also sets HSTS. CSP permits inline scripts/styles for Next.js hydration and animation; this is a baseline policy, not a nonce-based strict CSP. Development additionally allows eval and websocket connections for framework tooling.
 
-The local target is one Node service with a writable cache directory. Before public hosting, decide source reuse terms, request throttling, TLS/origin settings and storage appropriate to the host. File snapshots are insufficient for ephemeral or multiple instances without shared storage.
+Local development uses one Node service with writable files. Vercel uses private Blob snapshots via `src/lib/snapshots.ts`, selected automatically when `VERCEL=1` (or explicitly with `KHULLAPATRO_CACHE_STORAGE=blob`). The connected store supplies server-only credentials. Production and nonproduction snapshot paths are separate; reads bypass Blob CDN caching, payloads are bounded to 5 MB, and writes use ETags to avoid replacing another instance’s newer saved data. Request deduplication and failure backoff remain per instance; this is not a distributed lock or global request limit. Source reuse terms remain unresolved.
 
 ## Layout
 

@@ -64,7 +64,7 @@ For an existing installation, point `KHULLAPATRO_CACHE_DIR` at your existing sna
 
 Server-only adapters extract inert public Hamro Patro bootstrap JSON and read FENEGOSIDA public JSON. Zod validates source records before replacing atomically persisted normalized snapshots. Defaults use ignored `.cache/KhullaPatro`; `KHULLAPATRO_CACHE_DIR` can point to a persistent writable directory. Requests have a 12-second timeout, bounded bodies, in-flight deduplication and a one-minute failure backoff. Source and retrieval dates stay separate; outages show clearly dated saved data or an unavailable state.
 
-This is a single-instance local Node service. Choose shared persistent storage before using ephemeral or multiple server instances. Source contracts are undocumented, coverage of every calendar year/event is not independently proven, and content reuse terms remain unresolved before public release. No public deployment has been made.
+Local development uses files; Vercel uses private shared Blob snapshots. See [deployment setup](deployment.md). Source contracts are undocumented, coverage of every calendar year/event is not independently proven, and content reuse terms remain unresolved before public release. Production deployment is now authorized; current status is in the deployment guide.
 
 ## Checks
 

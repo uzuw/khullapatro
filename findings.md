@@ -92,3 +92,7 @@ The user explicitly authorized a public `khullapatro` repository after readiness
 Public source publication is complete at https://github.com/uzuw/khullapatro (PUBLIC, default branch main). The app remains locally hosted; upstream reuse terms, persistent storage for ephemeral hosting, and real external OAuth verification remain separate unresolved limitations.
 
 The user renamed the project to Khulla Patro (खुला पात्रो), with khullapatro as the package/repository slug. Cache configuration is now KHULLAPATRO_CACHE_DIR and the default directory is .cache/KhullaPatro; existing local saved data was migrated.
+
+Vercel deployment is now explicitly authorized. The connector identity probe succeeds, but its default-team resource access fails (403 for uzuws-projects) and team listing is empty. The same-scope CLI fallback requires device authentication. This is an access limitation, not a build or source-data failure.
+
+The CLI device flow resolved deployment access. The Vercel project is prj_jajUgwgXMOJiNqEqcpYcbDtEceIs under team_jTvLy2L6Dhef4vKGlYngFNAD; private Blob store store_8cGHqqXPQxHGrr7b is connected. Shared snapshot support uses conditional ETag writes; per-process source deduplication remains a limitation. Hobby storage operation allowances can be exhausted under sustained use; no paid upgrade was requested.

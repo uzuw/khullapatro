@@ -1,6 +1,4 @@
-import { mkdir, readFile, rename, writeFile, unlink } from 'node:fs/promises';
-import { join } from 'node:path';
-import { randomUUID } from 'node:crypto';
+import { readSnapshot, writeSnapshot as persist } from './snapshots';
 import { z } from 'zod';
 import { nepalDate } from './date';
 import { type Envelope, type SourceWarning, SourceError, sourceMetaSchema } from './contracts';
@@ -24,22 +22,6 @@ type CacheOptions<T> = {
 const memory = new Map<string, Envelope<unknown>>();
 const inflight = new Map<string, Promise<Envelope<unknown>>>();
 const failures = new Map<string, { until: number; error: SourceError }>();
-const directory = () =>
-  process.env.KHULLAPATRO_CACHE_DIR || join(process.cwd(), '.cache', 'KhullaPatro');
-
-async function persist(key: string, value: Envelope<unknown>) {
-  const dir = directory();
-  const temporary = join(dir, `${key}.${randomUUID()}.tmp`);
-  try {
-    await mkdir(dir, { recursive: true });
-    await writeFile(temporary, JSON.stringify(value), { mode: 0o600 });
-    await rename(temporary, join(dir, `${key}.json`));
-    return true;
-  } catch {
-    await unlink(temporary).catch(() => {});
-    return false;
-  }
-}
 
 export async function cached<T>(options: CacheOptions<T>): Promise<Envelope<T>> {
   if (!/^[a-z0-9-]+$/.test(options.key)) throw new Error('Invalid internal cache key');
@@ -66,8 +48,8 @@ async function refresh<T>(options: CacheOptions<T>): Promise<Envelope<T>> {
   let from: 'memory' | 'snapshot' = 'memory';
   if (!old) {
     try {
-      const raw = await readFile(join(directory(), `${options.key}.json`), 'utf8');
-      if (raw.length > 5_000_000) throw new Error('Snapshot too large');
+      const raw = await readSnapshot(options.key);
+      if (!raw) throw new Error('Snapshot unavailable');
       old = schema.parse(JSON.parse(raw)) as Envelope<T>;
       if (
         old.meta.source !== options.source ||
@@ -151,7 +133,7 @@ async function refresh<T>(options: CacheOptions<T>): Promise<Envelope<T>> {
     if (!(await persist(options.key, response)))
       response.meta.warnings.push({
         code: 'CACHE_NOT_PERSISTED',
-        message: 'Saved fallback is unavailable after a server restart.',
+        message: 'Latest refresh could not be saved for future requests.',
       });
     memory.set(options.key, response);
     if (memory.size > 140) memory.delete(memory.keys().next().value!);

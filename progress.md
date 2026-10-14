@@ -94,3 +94,17 @@ The user explicitly requested implementation with the modern Next.js stack and d
 - Renamed the public GitHub repository to https://github.com/uzuw/khullapatro and updated the local remote and repository description.
 
 - Final brand sweep found no former name in tracked text. README shortened from 1,431 to 382 words; README and development-guide local links validated. Rename implementation and verification are complete; publication to main is authorized.
+
+## Vercel deployment authorized
+
+- User explicitly requested deployment using the integrated Vercel account.
+- MCP identifies uzuw with default team uzuws-projects, but lists zero accessible teams and rejects project listing in that team with 403 forbidden.
+- Mapped CLI fallback has no existing credentials and started device authentication. User was given the sign-in link; deployment and storage provisioning await access.
+- Preparing shared normalized snapshot support and deployment exclusions independently.
+
+- CLI device login succeeded and confirmed access to uzuws-projects. Created/linked the khullapatro project to the existing GitHub repository.
+- Created private khullapatro-snapshots store in bom1 and connected it; configured Node.js 22 and a sensitive production authentication secret.
+- Added shared private snapshot reads/conditional writes with bounded payloads, separate production paths, and retained file storage locally. All 25 unit tests, typecheck, and lint pass.
+
+- 2026-10-14 release checks pass: production build, typecheck, lint, formatting, 25 unit checks, 11 browser checks, and production dependency audit.
+- Real private Blob integration preserved a validated calendar snapshot across cleared process memory with identical data and original retrieval timestamp. GitHub-linked production deployment is next.

@@ -14,3 +14,7 @@ test-results/
 evidence/hamropatro/
 evidence/snapshots/
 evidence/rea-bundle.json
+
+# Vercel local project links and pulled environment files.
+.vercel/
+.vercel

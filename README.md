@@ -64,7 +64,7 @@ Open **[localhost:3001](http://localhost:3001)**. GitHub sign-in is optional. Fo
 
 We used **REA MCP**, public-response inspection, and browser checks to understand Hamro Patro's calendar/rashifal data. Server adapters read public bootstrap JSON; metals come independently from **FENEGOSIDA**. REA analysis was partial—we did not recover a private backend or recreate astronomical calculations.
 
-Validated snapshots provide dated fallback during outages. Vercel or multiple-instance hosting needs shared persistent storage.
+Validated snapshots provide dated fallback during outages: local files for development, private Vercel Blob storage when hosted. See the [deployment guide](docs/deployment.md).
 
 ## Development & sources
 

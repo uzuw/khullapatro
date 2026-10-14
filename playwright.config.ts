@@ -15,6 +15,7 @@ export default defineConfig({
       env: {
         NODE_OPTIONS: '--import ./tests/support/source-fixtures.mjs',
         KHULLAPATRO_CACHE_DIR: '.cache/playwright',
+        KHULLAPATRO_CACHE_STORAGE: 'file',
         AUTH_GITHUB_ID: '',
         AUTH_GITHUB_SECRET: '',
         AUTH_URL: 'http://127.0.0.1:3002',
@@ -28,6 +29,7 @@ export default defineConfig({
       env: {
         NODE_OPTIONS: '--import ./tests/support/source-fixtures.mjs',
         KHULLAPATRO_CACHE_DIR: '.cache/playwright-auth',
+        KHULLAPATRO_CACHE_STORAGE: 'file',
         AUTH_URL: 'http://localhost:3004',
         AUTH_SECRET: 'khullapatro-test-only-key-never-use-in-production',
         AUTH_GITHUB_ID: 'khullapatro-test-client',

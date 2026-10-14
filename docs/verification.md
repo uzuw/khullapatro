@@ -72,7 +72,7 @@ The available in-app browser independently showed the live current calendar, the
 
 - No GitHub application credentials were supplied. Local auth routes and outgoing OAuth redirect were tested; external GitHub authorization, callback token exchange and real account session remain untested. Use `localhost` consistently for local OAuth because Next.js normalizes loopback authentication URLs to that hostname. NextAuth v5 is pinned to a beta release.
 - Public source contracts are undocumented and content reuse/redistribution terms remain unresolved. The app displays source-provided events/readings; it does not recover Hamro Patro's private backend or guarantee exhaustive calendar/event coverage. REA's semantic analysis remains partial.
-- The disk store assumes a writable single instance. Public/ephemeral/multiple-instance hosting needs a storage and reuse decision; no deployment occurred.
+- Local disk snapshots assume a writable single instance. Vercel now uses private shared Blob snapshots; storage quotas and per-instance request deduplication remain limitations. Upstream content reuse terms remain unresolved.
 - CSP is a same-origin baseline with inline script/style allowances for framework hydration/motion, not a nonce-based strict policy.
 - The full npm audit reports five high development-only entries along the Next ESLint→fast-glob→micromatch→braces dependency chain. The available automatic remedy downgrades the Next ESLint configuration to v14; this was not applied to a Next 16 project. Production audit is clean. Recheck tooling advisories before CI/public release.
 
@@ -83,3 +83,7 @@ Before the authorized public GitHub push on 2026-10-13, the production build, Ty
 ## Khulla Patro rename verification
 
 After the branding, package, cache configuration, and documentation rename, the production build, TypeScript, ESLint, formatting, all 22 unit checks, and all 11 production Chromium checks pass. Four README previews were regenerated from the new build. Desktop and 360px mobile calendar screenshots were visually inspected; the longer name fits and all source events remain accessible. The in-app browser could not attach for an additional live inspection; verification here uses the authored Chromium checks and inspected captures.
+
+## Vercel release preparation (2026-10-14)
+
+Production build, typecheck, lint, formatting, 25 unit checks, and 11 production Chromium checks pass. The production dependency audit is clean. A real private-Blob integration check fetched and validated calendar 2083/6, persisted it, cleared process memory, and reloaded identical data from a snapshot with the original fetchedAt timestamp (2026-10-14T04:57:26.283Z). This checks real storage access from the local runtime; deployed source/API/UI checks follow after the build is hosted.

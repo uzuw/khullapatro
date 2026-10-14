@@ -4,7 +4,7 @@
 
 **Implementation authorized.** On 2026-10-13 the user asked to start with Next.js, NextAuth, Tailwind CSS, Framer Motion, next/font, Zod, security headers, next/image, Playwright, ESLint, Prettier, Obsidian UI components, dithered artwork, navigable pages, balanced grids, and smooth restrained animations.
 
-This supersedes the earlier planning-only instruction. Implement and verify the three product sections locally. Public deployment is not requested. Preserve the original product scope while following the new stack and visual requirements.
+This supersedes the earlier planning-only instruction. Implement and verify the three product sections locally. The user has now authorized public deployment to Vercel. Prepare, deploy, and verify the existing three sections; no additional product features are authorized. Preserve the original product scope while following the new stack and visual requirements.
 
 ## Read first
 
