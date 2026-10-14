@@ -8,6 +8,7 @@ export async function fetchSource(url: string): Promise<string> {
       redirect: 'manual',
       headers: {
         Accept: 'text/html, application/json',
+        'Accept-Language': 'ne-NP,ne;q=0.9,en;q=0.5',
         'User-Agent': 'KhullaPatro/0.1 (local calendar and Nepal benchmark reader)',
       },
     };
@@ -16,13 +17,19 @@ export async function fetchSource(url: string): Promise<string> {
       const original = new URL(url);
       const location = response.headers.get('location');
       const target = location ? new URL(location, original) : null;
-      // Follow one canonical trailing-slash redirect, never a login/challenge or another origin.
+      // Hamro's regional edge can add /en to calendar routes; its JSON still includes Nepali fields.
+      const samePath = target?.pathname.replace(/\/$/, '') === original.pathname.replace(/\/$/, '');
+      const calendarLocale =
+        original.origin === 'https://www.hamropatro.com' &&
+        /^\/calendar\/\d{4}\/(?:[1-9]|1[0-2])\/?$/.test(original.pathname) &&
+        target?.pathname.replace(/\/$/, '') === `/en${original.pathname.replace(/\/$/, '')}`;
+      // One known canonical/locale redirect, never a login/challenge or another origin.
       const canonical =
         target &&
         target.href !== original.href &&
         target.protocol === 'https:' &&
         target.origin === original.origin &&
-        target.pathname.replace(/\/$/, '') === original.pathname.replace(/\/$/, '') &&
+        (samePath || calendarLocale) &&
         target.search === original.search &&
         !target.hash &&
         !target.username &&

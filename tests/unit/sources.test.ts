@@ -456,3 +456,18 @@ test('source fetching rejects changed origins, login paths, challenge queries, a
   await assert.rejects(fetchSource('https://www.hamropatro.com/calendar/2100/12'), SourceError);
   assert.equal(calls, 2);
 });
+
+test('Hamro calendar locale redirects retain the exact requested year and month', async () => {
+  let calls = 0;
+  globalThis.fetch = async (url) => {
+    calls++;
+    if (calls === 1)
+      return new Response(null, { status: 307, headers: { location: '/en/calendar/2083/6' } });
+    assert.equal(String(url), 'https://www.hamropatro.com/en/calendar/2083/6');
+    return new Response(html(calendarFixture));
+  };
+  const body = await fetchSource('https://www.hamropatro.com/calendar/2083/6');
+  const normalized = parseCalendar(body, 2083, 6).data;
+  assert.deepEqual(normalized, parseCalendar(html(calendarFixture), 2083, 6).data);
+  assert.equal(calls, 2);
+});
